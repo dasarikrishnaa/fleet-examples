@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: frontend
   labels:
-    app: guestbook-test
+    app: guestbook
     tier: frontend
 spec:
   type: NodePort
   ports:
   - port: 80
   selector:
-    app: guestbook-test
+    app: guestbook
     tier: frontend
