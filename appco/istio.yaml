@@ -1,0 +1,7 @@
+namespace: application-collection
+helm:
+  releaseName: rancher-istio
+  chart: "oci://dp.apps.rancher.io/charts/istio:0.8.1"
+  repo: ""
+  force: false
+  timeoutSeconds: 0
