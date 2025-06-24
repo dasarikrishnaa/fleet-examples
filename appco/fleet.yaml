@@ -1,12 +1,8 @@
-namespace: application-collection
-
+defaultNamespace: istio-system
 helm:
-  releaseName: sample-appco-nginx
-  chart: "oci://dp.apps.rancher.io/containers/nginx:1.28.0"
-  repo: ""
+  releaseName: fleet-appco-istio
+  chart: "oci://dp.apps.rancher.io/charts/istio"
+  version: "0.8.1"
   force: false
   timeoutSeconds: 0
-  values:
-    replicas: 2
-    service:
-      type: NodePort
+  targetNamespace: istio-system
