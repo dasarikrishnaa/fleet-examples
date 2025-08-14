@@ -4,4 +4,4 @@ metadata:
   name: redis-slave
 spec:
   selector:
-    role: master
+    role: master123
