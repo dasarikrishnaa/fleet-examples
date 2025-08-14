@@ -3,6 +3,6 @@ targetCustomizations:
 - name: dev
   clusterSelector:
     matchLabels:
-      agentNo: '1'
+      iotEdgeDeviceId: XK91R3
   kustomize:
     dir: overlays/dev
